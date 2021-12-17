@@ -1,14 +1,41 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Name</title>
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body class="center">
-    <p class="center">My App</p>
-  </body>
-  <script src="index.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/profile-instagram.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Instagram Profile</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <button onclick="backClick()"><i class="fa fa-angle-left backBtn"></i></button>
+            <div id="prifileNameBox"><h1>instagram</h1><img src="./images/blueTick.png" alt="blueTick" width="40" height="25"></div>
+            <button onclick="menuClick()"><svg aria-label="Options" class="_8-yf5 " color="#262626" fill="#262626" height="32" role="img" viewBox="0 0 24 24" width="32"><circle cx="12" cy="12" r="1.5"></circle><circle cx="6" cy="12" r="1.5"></circle><circle cx="18" cy="12" r="1.5"></circle></svg></button>
+        </nav>
+        <div class="profileBox">
+            <div class="profileDetails">
+               <div id="profileImgBox"><img src="./images/profile-instagram.jpg" alt="instagram-profile" width="150" height="150"></div> 
+                <div class="countBox">
+                    <div class="profileStatistics"><span>6,368</span><span>Posts</span></div>
+                    <div class="profileStatistics"><span>350 M</span><span>Followers</span></div>
+                    <div class="profileStatistics"><span>101</span><span>Following</span></div>
+                </div>
+            </div>
+            <section class="bioBox">
+                <h3>Instagram</h3>
+                <p>Bringing you closer to the people and things you<br>love. ❤️</p>
+                <a href="https://www.facebook.com/community_help/?page_source=fb_marketing_covid_mar_campaign">www.facebook.com/covidsupport</a>
+            </section>
+            <div class="actionBox">
+                <button onclick="followClick()" id="followBtn">Follow</button>
+                <button onclick="messageClick()" id="messageBtn">Message</button>
+                <button onclick="otherUsersClick()" id="otherUsersBtn"><i class="fa fa-angle-down"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
 </html>

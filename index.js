@@ -1,5 +1,15 @@
-const emojiList = ['🤗', '🍀', '(⚈ ̫ ⚈)', '😀', '😁', '😅', '😇', '😉'];
-const p = document.querySelector('p');
-p.addEventListener('click', () => {
-  p.innerText = emojiList[Math.floor((Math.random() * 100) % emojiList.length)];
-});
+const backClick = () =>{
+  console.log("backClick");
+}
+const menuClick = () =>{
+  console.log("menuClick");
+}
+const followClick = () =>{
+  console.log("followClick");
+}
+const messageClick = () =>{
+  console.log("messageClick");
+}
+const otherUsersClick = () =>{
+  console.log("otherUsersClick");
+}
